@@ -1,0 +1,515 @@
+:root {
+  --default-font-family: ui-sans-serif;
+  --odd-section-color: hsl(240, 33%, 99%);
+  --even-section-color: white;
+  --main-header-color: #101828;
+  --form-background-color: hsl(240, 33%, 99%);
+  --color-gray: #d1d5dc;
+  --color-gray-deep: #4a5565;
+  --footer-color: oklch(70.7% 0.022 261.325);
+  --copyright-text-color: #6a7282;
+  --color-gray-deep-deep: #364153;
+}
+
+* {
+  font-family: var(--default-font-family), system-ui, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.clear {
+  content: "";
+  clear: both;
+}
+
+.font-18 {
+  font-size: 18px;
+}
+.font-20 {
+  font-size: 20px;
+}
+
+.font-30 {
+  font-size: 30px;
+}
+
+.text-gray-400 {
+  color: var(--color-gray-deep);
+  font-weight: 400;
+}
+
+.text-gray-600 {
+  color: var(--color-gray-deep);
+  font-weight: 600;
+}
+
+.container {
+  width: 1200px;
+  margin: auto;
+}
+
+.hero-section {
+  background-color: var(--odd-section-color);
+  padding-block: 80px;
+}
+
+.hero-section .hero-section-content {
+  display: inline-block;
+  width: 48%;
+}
+
+.hero-section .hero-section-content h1 {
+  color: var(--main-header-color);
+  font-size: 60px;
+  font-weight: 700;
+  margin-bottom: 24px;
+  line-height: 75px;
+}
+
+.hero-section .hero-section-content p {
+  line-height: 32.5px;
+  margin-bottom: 32px;
+}
+
+.hero-section .hero-section-content button {
+  color: white;
+  background-color: black;
+  padding: 18px 32px 22px 32px;
+  border: none;
+  vertical-align: text-top;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 600;
+  margin-right: 12px;
+  cursor: pointer;
+  font-weight: 600;
+}
+.hero-section .hero-section-content button:last-child {
+  background-color: white;
+  color: var(--color-gray-deep);
+  border: 2px solid var(--color-gray);
+  padding: 18px 32px 18px;
+}
+
+.hero-section .hero-section-img {
+  display: inline-block;
+  text-align: center;
+  padding-block-start: 29px;
+  width: 48%;
+}
+
+.hero-section .hero-section-img img {
+  width: 384px;
+  border-radius: 15px;
+}
+
+.why-choose-us {
+  background-color: var(--even-section-color);
+  padding-block: 73px 64px;
+}
+
+/*** this used by all (h2, p) when start section  ***/
+.title {
+  text-align: center;
+  width: 70%;
+  margin: auto;
+}
+.title h2 {
+  font-size: 36px;
+  margin-block-end: 20px;
+}
+
+.title p {
+  font-size: 20px;
+  line-height: 28px;
+  color: var(--color-gray-deep);
+  font-weight: 400;
+  margin-block-end: 64px;
+}
+/*** end-here ***/
+
+/*** shared between sections [2, 3, 4]  ***/
+.why-choose-us .benefit-cards,
+.testimonials .reviews {
+  margin-block-end: 64px;
+}
+.benefit-cards {
+  text-align: center;
+}
+.card {
+  padding: 32px;
+  display: inline-block;
+  vertical-align: top;
+  width: 30%;
+  border-radius: 15px;
+  text-align: center;
+  height: 266px;
+}
+.card:nth-child(1) {
+  background-color: #dbeafe;
+  border: 1px solid #bedbff;
+}
+
+.card:nth-child(2) {
+  background-color: #d0fae5;
+  border: 1px solid #a4f4cf;
+  margin-inline: 2%;
+}
+
+.card:nth-child(3) {
+  background-color: #f3e8ff;
+  border: 1px solid #e9d4ff;
+}
+/*** end here ***/
+
+.why-choose-us .benefit-cards .card .icon {
+  width: 64px;
+  height: 64px;
+  border-radius: 12px;
+  text-align: center;
+  padding-top: 16px;
+  margin: auto;
+}
+.why-choose-us .benefit-cards .card:nth-child(1) .icon {
+  background-color: #155dfc;
+}
+
+.why-choose-us .benefit-cards .card:nth-child(2) .icon {
+  background-color: #009966;
+}
+
+.why-choose-us .benefit-cards .card:nth-child(3) .icon {
+  background-color: #9810fa;
+}
+
+.why-choose-us .benefit-cards .card .icon .child-icon {
+  width: 32px;
+  height: 32px;
+  margin: auto;
+  background-color: white;
+  border-radius: 8px;
+}
+
+.why-choose-us .benefit-cards .card:nth-child(2) .icon .child-icon {
+  border-radius: 50%;
+}
+
+.why-choose-us .benefit-cards .card:nth-child(3) .icon .child-icon {
+  border-radius: 4px;
+}
+
+.why-choose-us .benefit-cards .card h3 {
+  margin-block: 24px 16px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.why-choose-us .benefit-cards .card p {
+  font-size: 14px;
+  line-height: 23px;
+  font-weight: 400;
+  color: var(--color-gray-deep-deep);
+}
+
+.why-choose-us .more-benefits .image {
+  width: 48%;
+  float: left;
+}
+.why-choose-us .more-benefits .image img {
+  width: 100%;
+  border-radius: 13px;
+}
+
+.why-choose-us .more-benefits .content {
+  width: 48%;
+  float: right;
+}
+.why-choose-us .more-benefits .content h3 {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  margin-bottom: 24px;
+}
+.why-choose-us .more-benefits .content div {
+  margin-block-end: 16px;
+  padding-left: 24px;
+}
+
+.why-choose-us .more-benefits .content h4 {
+  font-size: 20px;
+  margin-block-end: 8px;
+  line-height: 28px;
+  font-weight: 600;
+}
+.why-choose-us .more-benefits .content p {
+  font-size: 16px;
+  line-height: 24px;
+  vertical-align: middle;
+}
+
+.more-than-just-gym-info {
+  border-left: 4px solid black;
+}
+
+.testimonials {
+  padding-block: 76px 80px;
+  background-color: var(--odd-section-color);
+}
+
+.author-image {
+  width: 10%;
+  float: left;
+}
+
+.author-image img {
+  height: 64px;
+  width: 64px;
+  border-radius: 50%;
+}
+.author-info {
+  width: 60%;
+  margin-right: 39.5px;
+  text-align: left;
+  float: right;
+}
+
+.author-info h4 {
+  margin-block: 8px 3px;
+}
+
+.reviews .card {
+  height: 258px;
+}
+.reviews .card:nth-child(1) {
+  padding-inline: 32px 31px;
+}
+
+.reviews .card:nth-child(1) {
+  background-color: #eff6ff;
+}
+.reviews .card:nth-child(2) {
+  background-color: #ecfdf5;
+}
+
+.reviews .card:nth-child(3) {
+  background-color: #faf5ff;
+}
+.card-body {
+  margin-block: 20px 0;
+  line-height: 26px;
+  text-align: left;
+}
+
+.statistics {
+  padding: 39px 31px 50px 31px;
+  margin-top: 20px;
+  background-color: #f1f5f9;
+  border: 1px solid #e8edf4;
+  border-radius: 15px;
+  width: 100%;
+}
+
+.statistics-card {
+  width: 25%;
+  text-align: center;
+  float: left;
+}
+
+.statistics-card p {
+  padding-block: 5px;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.membership-form {
+  background-color: var(--even-section-color);
+  padding: 76px 170px 80px 170px;
+}
+
+.membership-form .title p {
+  margin-bottom: 50px;
+}
+.membership-form form {
+  width: 95%;
+  padding: 43px 46px;
+  background-color: var(--form-background-color);
+  margin: auto;
+  border: 3px solid var(--odd-section-color);
+  border-radius: 10px;
+}
+
+.membership-form form p {
+  font-size: 14px;
+  text-align: center;
+}
+
+.membership-form input,
+.membership-form select,
+.membership-form textarea {
+  font-size: 18px;
+  width: 100%;
+  text-align: left;
+  line-height: 28px;
+  padding: 15px 24px;
+  background-color: transparent;
+  border: 1px solid #e1e3e7;
+  border-radius: 8px;
+  margin-bottom: 25px;
+}
+
+.membership-form textarea {
+  padding-block: 14px 22px;
+  margin-bottom: 26px;
+  resize: none;
+}
+
+input[type="submit"] {
+  background-color: black;
+  color: white;
+  font-weight: 600;
+  text-align: center;
+  cursor: pointer;
+  border: 2px solid black;
+  font-size: 20px;
+  padding: 14px 25px;
+  margin-bottom: 25px;
+}
+
+input:focus {
+  border-color: black;
+}
+
+.first-name {
+  width: 48.5%;
+  float: left;
+}
+
+.last-name {
+  width: 48.5%;
+  float: right;
+}
+
+.membership-form form label {
+  display: block;
+  margin-bottom: 13px;
+  font-weight: 500;
+  line-height: 28px;
+  color: var(--color-gray-deep-deep);
+}
+
+footer {
+  color: white;
+  background-color: #101828;
+  padding-block: 75px;
+}
+
+footer .content {
+  margin-top: 4px;
+}
+footer .content div:not(:last-child) {
+  float: left;
+}
+
+footer a,
+footer p {
+  color: var(--footer-color);
+}
+footer a {
+  text-decoration: none;
+}
+
+footer p {
+  line-height: 29px;
+}
+
+footer .footer-info p {
+  margin-block: 15px 22px;
+}
+
+footer .footer-info ul,
+footer .quick-links ul,
+footer .contact-info ul,
+footer .copyright ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer .footer-info ul li {
+  display: inline;
+}
+footer .footer-info ul li:not(:first-child) {
+  margin-left: 20px;
+}
+
+footer .quick-links li {
+  margin-block: 15px;
+}
+
+footer .contact-info li p:first-child {
+  margin-bottom: 5px;
+}
+
+footer .contact-info li {
+  margin-bottom: 15px;
+}
+
+footer .copyright li {
+  margin-block: 10px;
+}
+
+footer h4 {
+  font-weight: 500;
+}
+.footer-info {
+  width: 50%;
+}
+
+.quick-links {
+  width: 23%;
+  margin-left: 15px;
+}
+.contact-info {
+  width: 23%;
+  margin-left: 31px;
+}
+
+.contact-info h4 {
+  margin-bottom: 20px;
+}
+
+.contact-info li p {
+  line-height: 24px;
+}
+
+.contact-info ul li p:first-child {
+  color: white;
+  font-weight: 600;
+}
+
+.copyright a,
+.copyright p {
+  font-size: 14px;
+  color: var(--copyright-text-color);
+}
+
+.copyright-text {
+  float: left;
+}
+
+.copyright-links {
+  float: right;
+}
+.copyright-links ul li {
+  display: inline;
+}
+
+.copyright-links ul li:not(:first-child) {
+  margin-left: 20px;
+}
+hr {
+  margin-block: 30px;
+  border: none;
+  height: 0.1px;
+  background-color: var(--color-gray-deep);
+}

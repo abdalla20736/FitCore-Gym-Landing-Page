@@ -2,6 +2,9 @@
 
 A modern landing page for **FitCore Gym**, designed to promote fitness services with sleek visuals, strong CTA sections, and user testimonials. Built using only **HTML** and **CSS**, this project focuses on clean UI, accessibility.
 
+**Live demo:** [https://fit-core-gym-landing-page.vercel.app/](https://fit-core-gym-landing-page.vercel.app/)
+
+
 ## 🚀 Features
 
 - ✅ Hero section with strong branding and call-to-action

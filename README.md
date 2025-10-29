@@ -25,10 +25,8 @@ A modern landing page for **FitCore Gym**, designed to promote fitness services 
 
 ## 📸 Screenshots
 
-![Homepage](./screenshots/hero-section.png)
-![Why Choose Us](./screenshots/gym-features.png)
-![Testimonials](./screenshots/gym-reviews.png)
-![form](./screenshots/gym-form.png)
-![footer](./screenshots/gym-footer.png)
+![Finance-Dashboard-1](./screenshots/screenshot-finance-dashboard-part-1.png)
+![Finance-Dashboard-2](./screenshots/screenshot-finance-dashboard-part-2.png)
+
 
 
